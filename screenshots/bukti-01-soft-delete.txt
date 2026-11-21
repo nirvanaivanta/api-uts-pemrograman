@@ -1,0 +1,9 @@
+﻿=== BUKTI 1: Setelah Soft Delete ===
+Query: SELECT id, kode_produk, nama_produk, deleted_at FROM produk WHERE id = 1;
+
+ id | kode_produk |     nama_produk      |         deleted_at         
+----+-------------+----------------------+----------------------------
+  1 | ELK-001     | Laptop ASUS VivoBook | 2026-11-21 20:16:44.405296
+(1 row)
+
+Kesimpulan: Baris masih ada, deleted_at TERISI dengan timestamp.

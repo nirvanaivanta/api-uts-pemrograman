@@ -1,0 +1,8 @@
+﻿=== BUKTI 3: Setelah Hard Delete Kategori ===
+Query: SELECT * FROM kategori WHERE id = 17;
+
+ id | nama_kategori | deskripsi | created_at 
+----+---------------+-----------+------------
+(0 rows)
+
+Kesimpulan: Baris tidak ada sama sekali — hard delete menghapus permanen.
