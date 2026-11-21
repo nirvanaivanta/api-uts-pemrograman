@@ -18,9 +18,9 @@ app.use((err, req, res, next) => {
   next(err);
 });
 
-// ── Routes (akan didaftarkan di plan berikutnya) ──────────────────────────────
-// app.use('/api/kategori', kategoriRoutes);
-// app.use('/api/produk',   produkRoutes);
+// ── Routes ───────────────────────────────────────────────────────────────────
+const kategoriRoutes = require('./routes/kategoriRoutes');
+app.use('/api/kategori', kategoriRoutes);
 
 // ── Handler: route tidak dikenal → 404 ───────────────────────────────────────
 app.use((req, res) => {
