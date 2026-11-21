@@ -20,7 +20,9 @@ app.use((err, req, res, next) => {
 
 // ── Routes ───────────────────────────────────────────────────────────────────
 const kategoriRoutes = require('./routes/kategoriRoutes');
+const produkRoutes   = require('./routes/produkRoutes');
 app.use('/api/kategori', kategoriRoutes);
+app.use('/api/produk',   produkRoutes);
 
 // ── Handler: route tidak dikenal → 404 ───────────────────────────────────────
 app.use((req, res) => {
